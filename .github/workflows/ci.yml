@@ -7,6 +7,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .   # 👈 ajoute ceci pour indiquer la racine du projet
 
     steps:
       - name: 🧩 Récupérer le code du dépôt
